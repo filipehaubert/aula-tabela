@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aula tabela</title>
+    <style>
+        table, td, th {
+            border: 1px solid black;
+        }
+
+        th, td {
+            padding: 10px;
+        }
+
+        #tabela>caption {
+            margin-top: 30px;
+            padding: 3px;
+            border-style: double;
+            /* border: 1px solid black; */
+            /* border-bottom: 0; */
+            background-color: #d8d8d8;
+        }
+
+        #tabela {
+            border: 1px solid black;
+            border-top: 0;
+            border-collapse: separate;
+            border-spacing: 3px;
+            color: #000;
+            background-color: #d8d8d8;
+        }
+
+        #tabela>tbody>tr>th {
+            background-color: #929292;
+        }
+
+        #tabela>tbody>tr>td {
+            background-color: #929292;
+        }
+
+        #tabela>thead>tr>th {
+            background-color: #525252;
+        }
+    </style>
+</head>
+<body>
+    <table id="tabela2">
+        <thead>
+            <tr>
+                <th>Nome</th>
+                <th>Idade</th>
+                <th>Informações adicionais</th>
+            </tr>
+        </thead>
+
+        <tbody>
+            <tr>
+                <td>João</td>
+                <td>25</td>
+                <td>Sou estudante</td>
+            </tr>
+            <tr>
+                <td>Maria</td>
+                <td>23</td>
+                <td>Programadora</td>
+            </tr>
+        </tbody>
+        
+    </table>
+
+    <table id="tabela">
+        <caption>Boletim escolar</caption>
+        <thead>
+            <tr>
+                <th colspan="5">Nome da pessoa estudante</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <th>Disciplinas</th>
+                <th colspan="2">1º Bimestre</th>
+                <th colspan="2">2º Bimestre</th>
+            </tr>
+            <tr>
+                <th rowspan="2">Matemática</th>
+                <td>10.0</td>
+                <td>9.0</td>
+                <td>10.0</td>
+                <td>7.0</td>
+            </tr>
+            <tr>
+                <td>8.0</td>
+                <td>8.0</td>
+                <td>9.0</td>
+                <td>7.0</td>
+            </tr>
+            <tr>
+                <th rowspan="2">Português</th>
+                <td>10.0</td>
+                <td>9.0</td>
+                <td>10.0</td>
+                <td>7.0</td>
+            </tr>
+            <tr>
+                <td>8.0</td>
+                <td>8.0</td>
+                <td>9.0</td>
+                <td>7.0</td>
+            </tr>
+        </tbody>
+    </table>
+</body>
+</html>
